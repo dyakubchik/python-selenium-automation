@@ -1,4 +1,4 @@
-# Created by Svetlana at 4/4/19
+# Created by Svetlana at 4/4/19, changed by Dmitry 1/21/2021
 Feature: Test Scenarios for Search functionality
 
   Scenario: User can search for a product

@@ -1,0 +1,13 @@
+icon logo, search by XPATH, //i[contains(@class,'a-icon a-icon-logo')]")
+                            //i[@class='a-icon a-icon-logo']"
+
+section "Sign in", search by XPATH, //h1[@class='a-spacing-small']
+
+section label, search by XPATH, //label[@for='ap_email']
+
+email field, search by id, "ap_email"
+
+
+
+
+

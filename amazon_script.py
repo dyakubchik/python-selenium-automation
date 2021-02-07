@@ -11,10 +11,8 @@ search_field.send_keys('Watches')
 search_icon = driver.find_element(By.ID, 'nav-search-submit-button')
 search_icon.click()
 
-# actual_text = driver.find_element(By.XPATH, "//span[@class='a-color-state a-text-bold']").text
-actual_text = driver.find_element(By.XPATH, "//*[@id="twotabsearchtextbox"]").text
-# actual_text = driver.find_element(By.XPATH, "/html/body/div[1]/div[2]/span/div/span/h1/div/div[1]/div/div/span[3]").text
-expexted_text = '"Watches"'
+actual_text = driver.find_element(By.XPATH, "//span[@class='a-color-state a-text-bold']").text
+expected_text = '"Watches"'
 
-assert expexted_text == actual_text, f'Expected {expexted_text}, but got {actual_text}'
+assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'
 driver.quit()

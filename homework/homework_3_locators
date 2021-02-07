@@ -1,0 +1,12 @@
+logo = (By.XPATH, "//i[@class='a-icon a-icon-logo']")
+create_account = (By.XPATH, "//h1[@class='a-spacing-small']")
+your_name = (By.ID, 'ap_customer_name')
+email = (By.ID, 'ap_email')
+password = (By.ID, 'ap_password')
+re_enter_password = (By.ID, 'ap_password_check')
+create_your_amazon_account = (By.ID, 'continue')
+link_conditions_of_use = (By.XPATH, "//a[@href='508088']")
+link_privacy_notice = (By.XPATH, "//a[@href='468496']")
+link_sign_in = (By.XPATH, "//a[class='a-link-emphasis']")
+
+

@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # init driver
-driver = webdriver.Chrome(executable_path=r'C:\Users\dmitr\OneDrive\Education\Automation Testing\Bootcamp - JobEasy\GitHub_Repository\python-selenium-automation\chromedriver.exe')
+driver = webdriver.Chrome(executable_path=r'C:\Users\dmitr\PycharmProjects\python-selenium-automation\chromedriver.exe')
 driver.maximize_window()
 
 # open the url
@@ -20,7 +20,7 @@ sleep(4)
 driver.find_element(By.NAME, 'btnK').click()
 
 # verify
-assert 'Dress' in driver.find_element(By.XPATH, "//div[contains(@class,'commercial-unit-desktop-top')]").text
+# assert 'Dress' in driver.find_element(By.XPATH, "//div[contains(@class,'commercial-unit-desktop-top')]").text
 assert 'Dress' in driver.find_element(By.XPATH, "//div[@class='g']").text
 
 driver.quit()

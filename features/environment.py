@@ -1,11 +1,11 @@
- from selenium import webdriver
+from selenium import webdriver
 
 
 def browser_init(context):
     """
     :param context: Behave context
     """
-    context.driver = webdriver.Chrome(executable_path=r'C:\Users\dmitr\OneDrive\Education\Automation Testing\Bootcamp - JobEasy\GitHub_Repository\python-selenium-automation\chromedriver.exe')
+    context.driver = webdriver.Chrome(executable_path=r'C:\Users\dmitr\PycharmProjects\python-selenium-automation\chromedriver.exe')
     # context.browser = webdriver.Safari()
     # context.browser = webdriver.Firefox()
 

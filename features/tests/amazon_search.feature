@@ -7,3 +7,4 @@ Feature: Amazon Search Test
     When Input Watches into Amazon search field
     And Click on Amazon search icon
     Then Product results for Watches are shown on Amazon
+    And Page URL has Watches in it

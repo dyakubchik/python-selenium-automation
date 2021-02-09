@@ -22,4 +22,9 @@ def click_search_amazon(context):
 def verify_search_result(context):
     actual_text = context.driver.find_element(By.XPATH, "//span[@class='a-color-state a-text-bold']").text
     expected_text = '"Watches"'
-    assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'
+    assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'\
+
+
+@then('Page URL has Watches in it')
+def verify_url_contains_query(context):
+    assert 'Watches' in context.driver.current_url, f'Watches not in {context.driver.current_url}'

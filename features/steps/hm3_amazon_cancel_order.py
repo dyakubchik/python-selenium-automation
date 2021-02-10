@@ -20,4 +20,4 @@ def input_amazon_help_search(context, search_query):
 def verify_search_result(context, result):
     actual_text = context.driver.find_element(*LINK_RESULT_HELP_PAGE).text
     expected_text = f'{result}'
-    assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'\
+    assert expected_text == actual_text, f'Expected {expected_text}, but got {actual_text}'

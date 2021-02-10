@@ -4,8 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.remote.webelement import WebElement
 
 
-
-driver = webdriver.Chrome(executable_path=r'/chromedriver.exe')
+driver = webdriver.Chrome(executable_path=r'C:\Users\dmitr\PycharmProjects\python-selenium-automation\chromedriver.exe')
 driver.implicitly_wait(4)
 driver.get('https://www.amazon.com/gp/help/customer/display.html')
 

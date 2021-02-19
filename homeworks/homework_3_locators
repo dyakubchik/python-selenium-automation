@@ -10,3 +10,8 @@ link_privacy_notice = (By.XPATH, "//a[@href='468496']")
 link_sign_in = (By.XPATH, "//a[class='a-link-emphasis']")
 
 
+Css selectors
+a[href*='ap_register_notification_privacy_notice?ie=UTF8&nodeId=468496']
+
+
+

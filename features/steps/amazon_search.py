@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
+from selenium.webdriver.common.keys import Keys
 
 SEARCH_FIELD = (By.ID, 'twotabsearchtextbox')
 SEARCH_ICON = (By.ID, 'nav-search-submit-button')
@@ -20,6 +21,11 @@ def input_amazon_search(context, search_query):
 @when('Click on Amazon search icon')
 def click_search_amazon(context):
     context.driver.find_element(*SEARCH_ICON).click()
+
+
+@when ('Search for {search_word}')
+def input_search(context, search_word):
+    context.driver.find_element(*SEARCH_FIELD).send_keys(search_word, Keys.ENTER)
 
 
 @then('Product results for {results_word} are shown on Amazon')
